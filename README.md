@@ -41,4 +41,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com 🧡 por Felipe Seidi Harakawa, durante o curso Fabrica de Aplicativos - Sujeito Programador. [ Visite o site! ]()
+Feito com 🧡 por Felipe Seidi Harakawa, durante o curso Fabrica de Aplicativos - Sujeito Programador. [ Visite o site! ](https://sujeitoprogramador.com/fabricadeaplicativos)
