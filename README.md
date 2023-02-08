@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto Calculadora IMC é uma página web que recebe o valor do peço e da altura do usuário, e através dos valores recebidos obtém-se o valor do IMC pela formula IMC = peso / (altura x altura). A classificação do índice de massa corporal (IMC) e suas definições podem ser encontradas aqui [Site](https://www.tuasaude.com/calculadora/imc).
 
-- [ Visite o projeto online ]()
+- [ Visite o projeto online ](https://lipeharakawa.github.io/f_a_calculadora_imc-html-css-js)
 
 ## ✅ Licença
 
