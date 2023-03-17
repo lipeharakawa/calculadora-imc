@@ -1,39 +1,143 @@
-body {
-  /*Alinha os elementos da página ao centro*/
-  font-family: "tiwe", monospace;
-  text-align: center;
-  background-color: #377474;
-  /*Fixa o plano de fundo na página preenchendo-o por um todo*/
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: #ffffff;
-  }
-
-h2 {
-  color: #ffffff;
-  margin: 0 0 5px;
-  font-size: 40px;
-  padding: 10px 15px;
+*{
+  box-sizing: border-box;
 }
 
-.button {
-  border: 0;
-  color: #ffffff;
-  background: #ff6051;
-  font-weight: bold;
-  padding: 15px 20px;
+body{
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+  background-color: #95fff7;
+  text-align: center;
+  padding: 2px;
+}
+
+header h1{
+  color: #ff5f38;
+}
+
+.section{
+  text-align: justify;
+  height: auto;
+  padding-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_parte_1{
+  flex: 40%;
+  margin-left: 10%;
+}
+
+.section_parte_1 h2{
+  color: #ff5f38;
+}
+
+.section_parte_2 h2{
+  color: #ff5f38;
+}
+
+.section_parte_2{
+  text-align: center;
+  flex: 40%;
+  margin-right: 10%;
+}
+
+.section .input{
+  display: block;
+  padding: 8px 15px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.button{
+  background:#95fff7;
+  text-align: center;
   font-size: 16px;
-  border-radius: 4px;
-  margin-top: 20px;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-input {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 15px;
+.cards{
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+  text-align: center;
+}
+
+.cards h2{
+  color: #ff5f38;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.resultado_imc{
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.card{
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1%;
+  border: 5px solid #95fff7;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.card:hover{
+  background-color: #ff5f38;
+}
+
+
+footer{
+  margin-top: 40px;
+  height: 100px;
+  background-color: #95fff7;
+  text-align: center;
+  border-top: 5px solid #ff5f38;
   color: black;
 }
+
+footer p{
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1100px){
+  .section{
+    padding-top: 20px;
+  }
+  .section_parte_1{
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .section_parte_2{
+    flex:100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+  }
+  footer{
+    width: auto;
+  }
+}
+
+
+
+
+

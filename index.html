@@ -1,25 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
-
+    <meta name="author" content="Felipe Seidi Harakawa">
     <link rel="stylesheet" href="./style.css">
+    <title>Calculadora IMC</title>
 </head>
 <body>
-    <form onsubmit="return calcular(event)">
-        <h2>Calculadora IMC</h2><br>
-        <label>Digite seu Peço:</label>
-        <input type="text" id="peso" nome="peso" placeholder="Exemplo: 60"><br>
-        <label>Digite sua Altura:</label>
-        <input type="text" id="altura" nome="altura" placeholder="Exemplo: 1.90"><br>
-        <input type="submit" class="button" value="Calcular IMC">
-    </form>
-    <br>
-    <div id="resultado"></div>
-            
+    <header>
+        <h1>Índice de Massa Corporal (IMC)</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Definição</h2>
+            <p>Segundo a secretaria de saúde do estado do Rio de janeiro, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.</p>
+            <p>Para fazer o cálculo, basta dividir o peso pela altura ao quadrado. O número final representa o quanto a pessoa tem de massa muscular + massa de gordura + massa óssea. Com o resultado, o próximo passo é interpretá-lo.</p>
+         </div>
+        <div class="section_parte_2">
+            <img style="max-width: 85%;" src="assets/img/img1.jpg">
+        </div>
+    </section>
+    <section class="section">
+        <div class="section_parte_1">
+            <img style="max-width: 85%;" src="assets/img/img2.jpg" class="img2">
+        </div>
+        <div class="section_parte_2">
+            <form onsubmit="return calcular(event)">
+                <h2>Calculadora de IMC</h2>
+                <label>Digite seu Peço:</label>
+                <input type="text" id="peso" nome="peso" class="input" placeholder="Exemplo: 60">
+                <label>Digite sua Altura:</label>
+                <input type="text" id="altura" nome="altura" class="input" placeholder="Exemplo: 1.90">
+                <input type="submit" class="button" value="Calcular IMC">
+            </form>
+            <p id="resultado"></p> 
+        </div>
+    </section>
+    <section class="cards">
+        <h2>Como interpretar o resultado de IMC</h2>
+        <div class="resultado_imc">
+            <div class="card">
+                    <h4>IMC = Menor que 18,5</h4>
+                    <p>Magreza</p>
+            </div>
+            <div class="card">
+                    <h4>IMC = Entre 18,5 a 24,9</h4>
+                    <p>Normal</p>
+            </div>
+            <div class="card">
+                    <h4>IMC = Entre 25 a 29,9</h4>
+                    <p>Sobrepeso</p>
+            </div>
+            <div class="card">
+                    <h4>IMC = Entre 30 a 34,9</h4>
+                    <p>Obesidade grau I</p>
+            </div>
+            <div class="card">
+                    <h4>IMC = Entre 35 a 39,9</h4>
+                    <p>Obesidade grau II</p>
+            </div>
+            <div class="card">
+                    <h4>IMC = Maior que 40</h4>
+                    <p>Obesidade grau III</p>
+            </div>
+    </section>
+    <footer>
+        <p>© Todos os direitos reservados.</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
