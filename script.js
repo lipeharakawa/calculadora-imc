@@ -9,9 +9,9 @@ function calcular(event){
 
     imc = peso / (altura * altura);
 
-    if(imc < 18.5){
+    if(imc < 18){
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Cuidado, você está muito abaixo do peso!"
-    }else if(imc >= 18.5 && imc <= 24.99){
+    }else if(imc >= 18 && imc <= 24.99){
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Peso normal!"
     }else if(imc >= 25 && imc <= 29.99){
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Cuidado, você está com excesso de peso!"
@@ -20,7 +20,7 @@ function calcular(event){
     }else if(imc >= 35 && imc <= 39.99){
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Cuidado, você está com obesidade grau II!"
     }else if(imc >= 40){
-        resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Cuidado, você está com obesidade grau III!"
+        resultado.innerHTML = "<br> Seu resultado foi: " + imc + " kg/m2" + "<br> Cuidado, você está com obesidade Mórbida!"
     }
 
     document.getElementById("peso").value = "";
